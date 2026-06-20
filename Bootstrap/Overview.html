@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Asset/Image/Footer.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Asset/Image/Glance Logo.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Asset/Image/iphone-17-lineup.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+    <table class="text-center table table-striped table-bordered border border-primary">
+        <tr class="table-primary">
+            <th>#</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@matto</td>
+            <td>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- For add the group into one use "btn-group" -->
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+    </div>
+
+
+
+    <!-- Want sth new? try this! -->
+<div class="btn-group">
+    <input class="btn-check" id="Male" type="radio" name="gender">
+    <label class="btn btn-outline-primary" for="Male">Male</label>
+
+    <input class="btn-check" id="Female" type="radio" name="gender">
+    <label class="btn btn-outline-primary" for="Female">Female</label>
+
+    <input class="btn-check" id="Other" type="radio" name="gender">
+    <label class="btn btn-outline-primary" for="Other">Other</label>
+</div>
+
+<!-- If you want to use this agian, change id="..." data-bs-target="#..."  -->
+<div id="banner" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Asset/Image/Footer.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Asset/Image/Glance Logo.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Asset/Image/iphone-17-lineup.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- New -->
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-item">Snake</li>
+    <li class="dropdown-item">Are you Snake?</li>
+    <li class="dropdown-item">My friend was Snake!!</li>
+    <li class="dropdown-item">Nobody was a Snake.</li>
+  </ul>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Resiger</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <link rel="stylesheet" href="./From.html">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

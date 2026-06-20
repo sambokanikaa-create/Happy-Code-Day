@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+<style>
+ul {
+  list-style-type: none;
+}
+.box {
+  background-color: #6d6dfe;
+  padding: 20px;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+img {
+  width: 200px;
+}
+</style>
+<body>
+
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #6d6dfe;">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: aliceblue;" href="#">G</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" style="color: aliceblue;" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: aliceblue;" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: aliceblue;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" style="color: aliceblue;">
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Location</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- Carousel -->
+   <div id="carouselExampleInterval" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../Asset/Image/comic.1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../Asset/Image/comic.2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Asset/Image/comic.3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Card -->
+   <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 mt-4">
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's goood when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="../Asset/Image/d356b3ca772d694753069db595e7008a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Roblox Shirt</h5>
+            <p class="card-text">The shirt that make you look so cool and it's good when you play Roblox.</p>
+            </div>
+            <div class="btn d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Buy</button>
+            <button type="button" class="btn btn-danger">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+   </div>
+
+   <!-- Card bottom -->
+    <div class="card text-bg-dark">
+     <img src="../Asset/Image/Footer.png" class="card-img" alt="...">
+    </div>
+  
+    <!-- Footer -->
+     <footer>
+      <div class="box d-flex">
+        <img src="../Asset/Image/White Flower.jpg" alt="">
+        
+        <div class="foot-a d-flex">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Content</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      
+        <ul>
+          <li><a href="#">Discounts</a></li>
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">T-Shirt</a></li>
+          <li><a href="#">Jeans</a></li>
+        </ul>
+      
+        <ul>
+          <li><a href="#">Unicorn</a></li>
+          <li><a href="#">Tel</a></li>
+          <li><a href="#">Vase</a></li>
+          <li><a href="#">Kind</a></li>
+        </ul>
+        </div>
+
+      </div>
+     </footer>
+
+</div>
+</body>
+
+</html>

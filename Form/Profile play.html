@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page with Color Buttons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #e0f7fa;
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .pic1 {
+      width: 20%;
+    }
+    .pic1 img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .pic2 {
+      width: 40%;
+    }
+    .pic2 img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .des {
+      width: 40%;
+      padding: 20px;
+      background-color: #ffe4e1;
+      border-radius: 6px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .title h1 {
+      font-size: 22px;
+    }
+    .title span {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .color, .size {
+      margin: 15px 0;
+    }
+
+    /* Color buttons */
+    .color-options {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .color-btn {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      cursor: pointer;
+      display: inline-block;
+    }
+    /* Example colors */
+    .red { background-color: red; }
+    .black { background-color: black; }
+    .blue { background-color: blue; }
+
+    /* Size buttons */
+    .size button {
+      margin: 5px;
+      padding: 8px 14px;
+      border: 1px solid #333;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .size button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .des select {
+      margin-top: 10px;
+      padding: 6px;
+    }
+
+    .des button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .des button:hover {
+      background: #444;
+    }
+
+    .size-guide {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pic1">
+      <img src="../Asset/Image/red gwn.jpg" alt="Thumbnail 1">
+      <img src="../Asset/Image/red gwn.jpg" alt="Thumbnail 2">
+    </div>
+
+    <div class="pic2">
+      <img src="../Asset/Image/red gwn.jpg" alt="Main Product Image">
+    </div>
+
+    <div class="des">
+      <div class="title">
+        <h1>Red Evening Gown</h1>
+        <span>$40</span>
+      </div>
+
+      <div class="color">
+        <p>Color</p>
+        <div class="color-options">
+          <span class="color-btn red"></span>
+          <span class="color-btn black"></span>
+          <span class="color-btn blue"></span>
+        </div>
+      </div>
+
+      <div class="size">
+        <p>Size</p>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+        <button>2XL</button>
+        <button disabled>3XL</button>
+      </div>
+
+      <a href="#" class="size-guide">Size guide</a>
+
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <button>Add to Cart</button>
+
+      <p style="margin-top:15px;">Description: Elegant red evening gown with embroidery details.</p>
+    </div>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Button</title>
+  <style>
+    .color {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .color-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      background-color: red; /* button color */
+      cursor: pointer;
+    }
+
+    /* Optional hover effect */
+    .color-button:hover {
+      transform: scale(1.1);
+      border-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="color">
+    <p>Color</p>
+    <div class="color-button"></div>
+    <div><p>red</p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        height: 100vh;
+        padding: 20px;
+    }
+    .container {
+        background-color: aqua;
+        width: 80%;
+        height: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        display: flex;
+    }
+    .box {
+        display: flex;
+    }
+    .pic1 {
+        background-color: red;
+        width: 20%;
+        height: 100%;
+        padding: 20px;
+    }
+    .pic1 img {
+        width: 90%;
+        height: 35%;
+        position: relative;
+    }
+    .pic2 {
+        background-color: purple;
+        width: 40%;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .pic2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .description {
+        background-color: pink;
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+    }
+    .title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .color button {
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .color-red {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    .color-red:hover {
+        background-color: crimson;
+        transition: all 1s;
+    }
+    
+    .product-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px; */
+        padding: 5px 10px;
+    }
+
+    /* Why we add this? Too be long even it not out of box... */
+    /* .description p {
+       word-break: break-word;
+    } */
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="pic1">
+           <img src="../Asset/Image/red gwn.jpg" alt="">
+           <img src="../Asset/Image/red gwn.jpg" alt="">
+        </div>
+
+        <div class="pic2">
+            <img src="../Asset/Image/red gwn.jpg" alt="">
+        </div>
+
+        <div class="description">
+            <!-- Title -->
+            <div class="title">
+                <p>Red Evening Gown</p>
+                <p>$40</p>
+            </div>
+
+            <br>
+
+            <!-- Color -->
+            <p>Color</p>
+            <div class="color">
+                <button>
+                    <div class="color-red"></div>
+                    <div><p>Red</p></div>
+                </button>
+            </div>
+
+            <br>
+
+            <!-- Size -->
+            <div class="size">
+                <p>Size</p>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>2XL</button>
+                <button disabled>3XL</button>
+            </div>
+
+            <!-- Size guide -->
+            <div class="size-guide">
+                <i class="fa-solid fa-shirt"></i>
+                <a href="">Size guide</a>
+                <div class="size-add">
+                   <select name="" id="">
+                      <option value="">1</option>
+                    </select>
+
+                    <button>Add to chart</button>
+                </div>
+            </div>
+            <p>Description</p>
+
+            <br>
+
+            <hr>
+            <div class="product-detail">
+                <p>Product Details</p>
+                <p>+</p>
+            </div>
+            <hr>
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>

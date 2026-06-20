@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /* we are the parent */
+    #main-box {
+        background-color: blue;
+        height: 300px;
+        width: 300px;
+        margin: 20px auto;
+        padding: 10px;
+
+        /* <!-- Display to fex this two child together, 
+            while column gap use after display for gap betweem this two
+            We can use gap or row-gap too, gap is all, row-gap is just for row, column-gap is just for column
+            --> */
+        
+        display: flex;
+        column-gap: 10px;
+    }
+    #box {
+        background-color: yellow;
+        height: 100%;
+        width: 50%; 
+    }
+    #box1 {
+        background-color: red;
+        height: 100%;
+        width: 50%;
+    }
+</style>
+<body>
+    <div id="main-box">
+        <div id="box"></div>
+        <div id="box1"></div>
+    </div>
+</body>
+</html>

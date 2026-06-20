@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 10px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        /* for no more point */
+        list-style-type: none; 
+    }
+    .register-btn {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: orange;
+        color: azure;
+    }
+    .register-btn:active {
+        scale: 0.97;
+        transition: all 1s;
+    }
+    .register-btn:hover {
+        background-color:olive;
+        transition: all 1s;
+        cursor: pointer;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: olive;
+        transition: all 1s;
+    }
+    .logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 2px solid rgb(175, 169, 169);
+    }
+    main {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page {
+        /* background-color: crimson; */
+    }
+    .pic {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .pic img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    .des {
+      position: absolute;
+      bottom: unset;
+      width: 250px;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    }
+    .des h2 {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .btn {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .eu-btn, .color-btn {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .des p {
+        font-size: 14px;
+        padding: 20px;
+    }
+    .p-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .price h2 {
+        margin: 0;
+    }
+    .price p {
+        font-size: 12px;
+    }
+    .add-btn {
+        padding: 5px 20px;
+        background-color: #c13131;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Asset/Image/Roblox Woman Face.jpg" alt="">
+            <h2>LoGo</h2>
+        </div>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+
+        <div class="btn">
+            <button class="register-btn">Register</button>
+        </div>
+    </header>
+    <main>
+        <div class="page">
+            <div class="pic">
+                <img src="../Asset/Image/red gwn.jpg" alt="">
+            </div>
+
+            <div class="des">
+                <h2>Ballgown Dress</h2>
+                <div class="btn">
+                    <button class="eu-btn">EU38</button>
+                    <button class="color-btn">Red/White</button>
+                </div>
+                <p>The beautiful dress made from the most iconic designer in the world. The best for you to go.</p>
+
+                <div class="p-btn">
+                    <div class="price">
+                        <p style="padding: 0;">PRICE</p>
+                        <h2>$69.99</h2>
+                    </div>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+
+        </div> 
+        <!-- page -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100%;
+        height: 200vh;
+    }
+    .container {
+        width: 100%;
+        height: 400px;
+        background-color: red;
+        display: flex;
+        /* gap: 20px; */
+        flex-direction: row;
+
+        /* this one was go center the way row or col go */
+        justify-content: center;
+
+        /* This one was add space between each other  */
+        /* justify-content: space-between; */
+
+        /* THis one is for right and left space equally */
+        justify-content: space-around;
+        /* this one was go against row or col, like row go col, col go row */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: cyan;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <h1>Hello</h1>
+</body>
+</html>

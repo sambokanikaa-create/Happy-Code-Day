@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        height: 900vh;
+    }
+    .container {
+        width: 700px;
+        height: 500px;
+        background-color: red;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        /* THis child was never listen to their parents */
+        /* position: fixed;
+        right: 0;
+        top: 20px; */
+
+        /* for the child who still listen to their parents */
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+
+        /* Umm, we use relative for leting it see like the old to young
+        the smaller the older like 1 is the older, 2 is the younger ... */
+        position: relative;
+        z-index: 2;
+        
+        /* this overflow hide the below text, it cant be scoll */
+        /* overflow: hidden; */
+
+        /* This overflow allow us to scroll the text. */
+        overflow: scroll;
+    }
+    .box4 {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+    }
+    .box4 {
+        width: 50px;
+        height: 50px;
+        background-color: yellowgreen;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2">
+            <p>Cake To be sweet and some thind was too good but I cant live withour u</p>
+            <p>Sweet To be sweet ka bo jiajijaijijdi idjijdidjidjidj,jiiiijijinnhuuuuu mnago was seet book like thid door homebhhhhhhqwertyuiopasdfghjkl;zxcvbnm,wertyuxcvbnbn</p>
+            <p>Sweet To be sweet ka bo jiajijaijijdi idjijdidjidjidj,jiiiijijinnhuuuuu mnago was seet book like thid door homebhhhhhhqwertyuiopasdfghjkl;zxcvbnm,wertyuxcvbnbn</p>
+            <p>Sweet To be sweet ka bo jiajijaijijdi idjijdidjidjidj,jiiiijijinnhuuuuu mnago was seet book like thid door homebhhhhhhqwertyuiopasdfghjkl;zxcvbnm,wertyuxcvbnbn</p>
+            <p>Sweet To be sweet ka bo jiajijaijijdi idjijdidjidjidj,jiiiijijinnhuuuuu mnago was seet book like thid door homebhhhhhhqwertyuiopasdfghjkl;zxcvbnm,wertyuxcvbnbn</p>
+            <p>Sweet To be sweet ka bo jiajijaijijdi idjijdidjidjidj,jiiiijijinnhuuuuu mnago was seet book like thid door homebhhhhhhqwertyuiopasdfghjkl;zxcvbnm,wertyuxcvbnbn</p>
+        </div>
+        <h1 style="visibility: hidden;">Hello</h1>
+        <!-- It just hide. -->
+        <h1 style="display: none;">Hello</h1>
+        <!-- It got forever. -->
+        <div class="box4"></div>
+        <div class="box5"></div>
+
+    </div>
+</body>
+</html>

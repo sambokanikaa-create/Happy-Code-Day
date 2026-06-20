@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        padding: 100px;
+    }
+    button {
+        padding: 5px 15px;
+        background-color: hsl(213, 65%, 60%);
+        color: aliceblue;
+        border-radius: 5px;
+        border: none;
+    }
+    /* Click play play */
+    button:hover {
+        background-color: #0e3d75;
+        transition: all 1s;
+        cursor: pointer;
+        /* transform: rotate(360deg); */
+    }
+    /* click on it */
+    button:active {
+        /* rotate: 1000deg; */
+        /* scale: 10; */
+        padding: 200px;
+    }
+    button:focus {
+        border: 1px solid red;
+    }
+    input {
+        border: 1px solid  grey;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    input:focus {
+        outline:1px solid #0e3d75;
+    }
+    /* for aleady :visited */
+    a:visited {
+        color: blueviolet;
+    }
+    /* for not visited */
+    a:link {
+        color: aqua;
+    }
+    .parent p:first-child {
+        background-color: chartreuse;
+    }
+    .parent p:last-child {
+        background-color: chartreuse;
+    }
+    .parent p:nth-child(2) {
+        background-color: #0e3d75;
+    }
+/* odd for 1,3,5, */
+</style>
+<body>
+    <button>
+        Signup
+    </button>
+    <input type="text"><br>
+    <a href="facebook.com">Home</a>
+    <a href="ggg">Gina</a>
+    <a href="https://www.facebook.com/reel/">Hoko</a>
+    <div class="parent">
+        <p>1.Orange</p>
+        <p>2.Orok</p>
+        <p>3.Orge</p>
+        <p>4.Orge</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 100px;
+    border: 1px solid rgb(200, 198, 198);
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style-type: none;
+}
+.after-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 100px;
+    border: 1px solid rgb(200, 198, 198);
+}
+/* Skip Here */
+.flash-card {
+   width: 200px;
+   height: 300px;
+   background-color: whitesmoke;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid rgb(200, 198, 198);
+   border-radius: 10px;
+}
+.box-card {
+    width: 100%;
+    height: 50%;
+}
+.flash-des {
+    width: 100%;
+    height: 50%;
+}
+.flash-title p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.flash-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.flash-title span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #af2b2b;
+    text-decoration: line-through;
+}
+.flash-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}

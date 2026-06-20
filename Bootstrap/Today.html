@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<style>
+    .two {
+        height: 100px;
+    }
+    @media (min-width: 768px) {
+        .two {
+            height: 400px;
+        }
+    }
+</style>
+<!-- In bootstrap, we have class="container"for easy margin-right/-left -->
+<body class="container"> 
+    <div class="w-100 bg-danger d-flex justify-content-center align-items-center gap-5" style="height: 500px;">
+        <div class=" bg-primary" style="width: 100px; height: 100px;">1</div>
+        <div class=" bg-secondary" style="width: 100px; height: 100px;">2</div>
+        <div class=" bg-info" style="width: 100px; height: 100px;">3</div>
+        <div class=" bg-success" style="width: 100px; height: 100px;">4</div>
+        <div class=" bg-warning" style="width: 100px; height: 100px;">5</div>
+    </div>
+
+    <!-- Column -->
+     <!-- Use col classes to create columns, with row to contain them -->
+     <div class="mt-5 row mb-5"> 
+        <div class="col-12 col-md-6 col-lg-3 bg-dark">1</div>
+        <div class="col-12 col-md-6 col-lg-3 bg-warning">2</div>
+        <div class="col-12 col-md-6 col-lg-3 bg-danger">3</div>
+        <div class="col-12 col-md-6 col-lg-3 bg-primary">4</div>
+     </div>
+     <!-- col=colunm, col-md=col media, col-lg=col large -->
+
+     <!-- mt=margin top, mb=margin bottom, row...-->
+     <div class="row mb-5">
+        <div class=" col-12 col-md-6  bg-danger-subtle">1</div>
+        <div class="col-12 col-md-6 bg-danger">2</div>
+        <div class="col-12 col-md-6 bg-warning">3</div>
+        <div class="col-12 col-md-6 bg-primary">4</div>
+        <div class="col-12 col-md-6 bg-info">5</div>
+        <div class="col-12 col-md-6 bg-danger-subtle">6</div>
+     </div>
+
+     <!-- New One -->
+     <main class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+            <div class="col">
+                <div class="bg-dark" style="height: 100px;">1</div>
+            </div>
+            <div class="col">
+                <div class="bg-warning" style="height: 100px;">2</div>
+            </div>
+        </div>
+         <div class="col">
+                <div class="bg-danger mt-1" style="height: 100px;">3</div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-1 mt-1">
+            <div class="col">
+                <div class="bg-primary" style="height: 100px;"></div>
+            </div>
+            <div class="col">
+                <div class="bg-primary" style="height: 100px;"></div>
+            </div>
+        </div>
+     </main>
+
+</body>
+</html>

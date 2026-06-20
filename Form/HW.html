@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main {
+        width: 100%;
+        height: 700px;
+        background-color: deeppink;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 70%;
+        height: 90%;
+        background-color: wheat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxA, .boxB {
+        width: 50%;
+        height: 100%;
+    }
+    .boxB {
+        background-color: white;
+        padding: 30px;
+    }
+    .boxA img {
+        width: 100%;
+        height: 100%;
+    }
+    .boxB h1 {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid red; 
+        display: inline-block;
+    }
+    .boxB .input-group {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+    }
+    .boxB .input-group input {
+        width: 100%;
+        padding: 10px;
+        background-color: lightgray;
+        border: none;
+    }
+    .boxB .input-group label {
+        font-size: 14px;
+        color: gray;
+    }
+    .boxB .remember {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .boxB .login {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .boxB .login input {
+        width: 100%;
+        padding: 10px;
+        background-color: lab(43.05% 60.44 41.11);
+        color: white;
+        border: none;
+    }
+    .boxB .link {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .boxB .link a {
+        font-size: 14px;
+        color: gray;
+        text-decoration: none;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <main>
+        <div class="container">
+                <div class="boxA">
+                    <img src="../Asset/Image/istockphoto-155159935-170667a.jpg" alt="">
+                </div>
+                <d class="boxB">
+                <div class="box">
+                     <h1>LOGIN</h1>
+                     <div class="input-group">
+                        <label for="">Username*</label>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Enter Username...">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Password*</label>
+                        <br>
+                        <input type="password" name="" id="" placeholder="Enter Password...">
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Remember me</label>
+                    </div>
+                    <div class="login">
+                         <input type="submit" value="Login">
+                    </div>
+                    <div class="link">
+                        <a href="">Forgot Password?</a>
+                        <br>
+                        <a href="">Don't have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

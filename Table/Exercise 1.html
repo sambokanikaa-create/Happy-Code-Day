@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="10" cellspacing="0" style="color: black;">
+        <th colspan="7" style="background-color: black; color: white;">Time Table</th>
+        <!-- 
+           rowspan : number of rows to span, it go down. 
+           colspan : number of columns to span, I mean it go left or right
+        -->
+        <!-- 
+           th : col 
+           tr : row 
+           td : add text after th and tr, it is a cell
+           cellpadding : space inside cell, I mean size of cell
+           cellspacing : space between cell, I mean space between row and col
+         -->
+        
+        <tr style="background-color: red;">
+                <th rowspan="6" style="background-color: red;">Hour</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thur</th>
+                <th>Fri</th>
+            
+                <tr>  
+                    <td>Math</td>
+                    <td>Eng</td>
+                    <td>Khmer</td>
+                    <td>PE</td>
+                    <td>CS</td>
+                </tr>
+                <tr>
+                    <td>PE</td>
+                    <td>CS</td>
+                    <td>Math</td>
+                    <td>Eng</td>
+                    <td>Khmer</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center" style="background-color: blue; color: white;">Lunch</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>PE</td>
+                    <td>Eng</td>
+                    <td>Khmer</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>Khmer</td>
+                    <td>Math</td>
+                    <td>PE</td>
+                    <td>CS</td>
+                    <td>Eng</td>
+            
+    </table>
+</body>
+</html>

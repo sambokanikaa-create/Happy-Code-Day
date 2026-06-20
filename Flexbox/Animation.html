@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* set the animation name for @keyframe */
+        animation-name: color;
+        animation-duration: 5s;
+
+        /* if you want it loop */
+        animation-iteration-count: infinite;
+
+        animation-direction: alternate;
+    }
+    @keyframes color {
+        from {
+            background-color: blueviolet;
+            scale: 1;
+            /* If you want it from start, set it 0 */
+            transform: translateX(0) translateY(0);
+            rotate: 0;
+            border-radius: 0;
+        }
+        to {
+            background-color: pink;
+            /* this one was set size */
+            scale: 2;
+            /* This one, "X" go to left, "Y" go down */
+            transform: translateX(200px) translateY(100px);
+            rotate: 300;
+            border-radius: 200px;
+        }
+
+        /* or we can use % instead of for and to*/
+    }
+
+    .mango {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        animation-name: mango;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes mango {
+        0% {
+            transform: translateX(0), translateY(0);
+        }
+        20% {
+            transform: translateX(200px) translateY(0);
+        }
+        40% {
+            transform: translateX(200px) translateY(300px);
+        }
+        60% {
+            transform: translateX(0px) translateY(300px);
+        }
+        80% {
+            transform: translateX(0px) translateY(0px);
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="mango"></div>
+</body>
+</html>

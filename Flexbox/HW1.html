@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: whitesmoke;
+    }
+    header {
+        width: 100%;
+        height: 10%;
+        background-color: black;
+        padding: 5px;
+        display: flex;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+    }
+    article {
+        width: 100%;
+        height: 10%;
+        background-color: black;
+        text-align: left;
+    }
+     article .link a {
+        font-size: 10px;
+        color: white;
+        margin: 10px auto;
+        padding: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    article .link {
+        text-align: right;
+    }
+        
+    main {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        column-gap: 10px;
+    }
+    .box1, .box3 {
+        width: 20%;
+        height: 100%;
+        background-color: black;
+        padding: 5px;
+    }
+    .box2 {
+        width: 60%;
+        height: 100%;
+        background-color: black;
+        padding: 5px;
+    }
+    section {
+        width: 100%;
+        height: 100%;
+    }
+    .box1 section{
+         background-color: red;
+    }
+    .box2 section{
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 5px;
+    }
+    .boxA {
+        width: 100%;
+        height: calc(100% / 3);
+        background-color: black;
+        margin:0 0 10px;
+        padding: 5px;
+
+    }
+    .boxB {
+       width: 100%;
+       height: 100%;
+       background-color: green;
+    }
+    .box3 section{
+        background-color: cyan;
+    }
+    footer {
+        width: 100%;
+        height: 10%;
+        background-color: black;
+        padding: 5px;
+    }
+    footer .box {
+        background-color: blue;
+    }
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+    }
+    footer .text {
+        color: white;
+    }
+    main .box1 .text {
+        align-items: flex-start;
+    }
+</style>
+<body>
+    <div class="container">.
+        <header>
+            <div class="box text">Header</div>
+        </header>
+        <article>
+                <div class="link">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Features</a>
+                    <a href="">Gallery</a>
+                    <a href="">Terms</a>
+                    <a href="">Contact</a>
+                </div>
+        </article>
+        <main>
+            <div class="box1">
+                <section class="text">Aside 1</section>
+            </div>
+            <div class="box2">
+                <section class="text">Section
+                    <div class="boxA">
+                        <div class="boxB"></div>
+                    </div>
+                    <div class="boxA">
+                        <div class="boxB"></div>
+                    </div>
+                    <div class="boxA">
+                        <div class="boxB"></div>
+                    </div>
+                </section>
+            </div>
+            <div class="box3 text">
+                <section></section>
+            </div>
+        </main>
+        <footer>
+            <div class="box text">Footer</div>
+        </footer>
+    </div>
+</body>
+</html>

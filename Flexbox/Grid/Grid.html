@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100vw;
+        background-color: red;
+        display: grid;
+        gap: 10px;
+        /* If we set it 200px 200px, meaning it 2 col about 200px, it set size and col or row */
+        /* grid-template-columns: 300px 200px 200px 200px; */
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+        grid-template-columns: repeat(4, 1fr);
+
+        /* This one set the size only */
+        /* grid-template-rows: 100px 300px; */
+        
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>
