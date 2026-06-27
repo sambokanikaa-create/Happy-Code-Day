@@ -16,7 +16,7 @@
 if (email == "suno@gmail.com" || password == "123"){
     if (email == "suno@gmail.com"){
         if(password == "123"){
-            console.log("Sucessfully")
+            console.log("Sucessfully, Login")
         }
         else{
             console.log("Incorrect password")
@@ -27,8 +27,20 @@ if (email == "suno@gmail.com" || password == "123"){
     }
 }
 else {
-    console.log("Invaid All")
+    // I use with && so too difficult...
+    // if (email != "suno@gmail.com") {
+    //     console.log("Incorrect Password")
+    // }
+    // else {
+    //     console.log("Incorrect Email")
+    // }
+
+    console.log("Invaild Email & Password")
 }
+
+// Use in web, show in page
+console.log("Unicorn.")
+document.write(<h1 style="color: red;">"Unicorn"</h1>);
 
 </script>
 
