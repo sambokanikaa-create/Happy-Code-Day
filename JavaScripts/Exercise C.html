@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let code=12
+    let name="Lipstick"
+    let qty=12
+    let price=50
+    let total= qty*price
+
+    let discount=0
+
+    if (total >=1 && total <=10){
+        discount = 10
+    }
+    else if (total >=11 && total <=20){
+        discount = 20
+    }
+    else if (total >=21 && total <=30){
+        discount = 30
+    }
+    else if (total >=31 && total <=40){
+        discount = 40
+    }
+    else if (total >=41 && total <=50){
+        discount = 50
+    }
+    else if (total >=51 && total <=60){
+        discount = 60
+    }
+    // I hell forgot this
+    else if (total >=60){
+        discount = 70
+    }
+    else {
+        console.log("Error...")
+
+    }
+
+if (discount !=0){
+    let payment= total-(total*discount/100) ;
+    console.log("Total : ", total)
+    console.log("Payment : ", payment)
+    console.log("Discount : ", discount)
+}
+</script>
+
+</html>
